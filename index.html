@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Servicios de TI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #f1e06d;
+            color: rgb(4, 4, 4);
+            text-align: center;
+            padding: 1rem 0;
+        }
+        nav {
+            text-align: center;
+            background-color: #444;
+            padding: 0.5rem 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            display: none; /* Oculta todas las secciones inicialmente */
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+        }
+        section.active {
+            display: block; /* Muestra la sección activa */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="display: flex; align-items: center; justify-content: space-between; padding: 0 50px;">
+            <img src="TI.jpg" alt="TI" style="width: 150px; height: auto;">
+            <div>
+                <h1>Evaluación para el consolidado 2</h1>
+                <p><b>Producto Académico Nº. 3</b></p>
+            </div>
+            <img src="Gestion TI.jpg" alt="Gestion TI" style="width: 120px; height: auto;">
+        </div>
+    </header>
+
+    <nav>
+        <a onclick="showSection('presentacion')">Presentación</a>
+        <a onclick="showSection('service-desk')">Service Desk</a>
+        <a onclick="showSection('tipos-gestion')">Tipos de Gestión</a>
+        <a onclick="showSection('conclusiones')">Conclusiones</a>
+        <a onclick="showSection('bibliografia')">Bibliografía</a>
+    </nav>
+
+    <main>
+        <section id="presentacion" class="active">
+            <h2>Integrante:</h2>
+            <p>Fabrizio Castañeda Pareja <br> <br>
+            Gestion de Servicio TI</p>
+        </section>
+
+        <section id="service-desk">
+            <h2>Service desk (incluido dentro de las prácticas de gestión de servicio de ITIL V4)</h2>
+            <h3>Buenas prácticas ITIL aplicadas al Service Desk</h3>
+            <p><b>1. Detección de la incidencia</b><br><br>
+                    Es fundamental monitorear constantemente para identificar posibles problemas antes de que afecten los procesos. 
+                    Muchas veces, estas incidencias son reportadas por los usuarios. <br><br>
+                <b>2. Registro de la incidencia</b><br><br>
+                    Se debe verificar si la incidencia ya está abierta o es nueva. Luego, registrarla con detalles como sistemas, usuarios afectados y descripción, para facilitar su solución. 
+                    Notificar a los afectados si impacta otros flujos de trabajo.<br><br>
+                <b>3. Categorización</b><br><br>
+                    Clasificar las incidencias según criterios predefinidos como tipo, servicio afectado y recursos necesarios. 
+                    Una buena categorización permite priorizar adecuadamente y detectar patrones en incidentes recurrentes.<br><br>
+                <b>4. Priorización</b><br><br>
+                    Establecer la prioridad según la urgencia y el impacto. 
+                    Esto asegura que incidencias críticas no queden relegadas frente a problemas menores.<br><br>
+                <b>5. Resolución de incidencias</b><br><br>
+                    * <b>Diagnóstico inicial:</b> El técnico evalúa y resuelve si está capacitado. <br>
+                    * <b>Escalamiento:</b> Si no puede resolverlo, el problema se pasa a un nivel superior.<br>
+                    * <b>Investigación:</b> Identificar la causa raíz y buscar soluciones en la base de conocimiento.<br>
+                    * <b>Resolución:</b> Aplicar la solución y verificar su efectividad.<br>
+                    * <b>Cierre:</b> Confirmar la satisfacción del usuario y registrar toda la información para evitar futuros problemas similares.<br></p>
+            <div style="display: flex; align-items: center; justify-content: space-between; padding: 0 50px;">
+                <img src="ServiceDesk.jpg" alt="ServiceDesk" style="width: 220px; height: auto;">
+                <img src="servicios.jpg" alt="Gestion TI" style="width: 300px; height: auto;">
+            </div>
+        </section>
+
+        <section id="tipos-gestion">
+            <h2>Tipos de Gestión</h2>
+            <p><b>Gestion de Incidentes y Problemas:</b><br><br>
+                La gestión de incidentes consiste en identificar, analizar y responder rápidamente a problemas para minimizar su impacto, aunque no siempre se logre una solución definitiva. 
+                Es clave para cumplir con los plazos de los proyectos y se aplica en diversos equipos, especialmente en TI, donde se integra con la gestión de entregas y principios como ITIL. 
+                Los gerentes de proyectos utilizan un proceso de cinco pasos para abordar eficazmente los incidentes y evitar retrasos en las tareas.<br><br>
+                    <div style="text-align: center;">
+                        <img src="incidentes.png" alt="incidentes" style="width: 300px; height: auto;">
+                    </div><br><br>
+                La gestión de problemas, común en equipos de TI, es un proceso de 8 pasos diseñado para abordar problemas recurrentes de alto impacto. 
+                Su objetivo es identificar y analizar las causas raíz de los incidentes críticos, implementando soluciones permanentes para prevenir futuras interrupciones. 
+                A diferencia de la resolución de problemas, no se aplica a todos los casos, sino a aquellos que generan mayores trastornos.<br><br>
+                    <div style="text-align: center;">
+                        <img src="problemas.jpg" alt="problemas" style="width: 300px; height: auto;">
+                    </div><br><br>
+                <b>Gestion de Cambios:</b><br><br>
+                Los cambios son clave para el crecimiento organizacional, como incorporar nuevas herramientas o explorar nuevos mercados. 
+                Aunque los ajustes menores son fáciles, los cambios grandes requieren planificación cuidadosa. 
+                Sin ella, pueden generar caos y ralentización. Es fundamental diseñar un plan claro y ofrecer apoyo previo para asegurar una transición fluida.<br><br>
+                    <div style="text-align: center;">
+                        <img src="cambios.jpg" alt="cambios" style="width: 300px; height: auto;">
+                    </div><br><br>
+                <b>Gestión de la capacidad, disponibilidad y continuidad de servicios:</b><br><br>
+                La gestión de la capacidad busca optimizar la eficiencia en producción o servicios según la demanda. 
+                Su objetivo es eliminar cuellos de botella, acelerar la producción y aprovechar al máximo los recursos disponibles reduciendo tiempos improductivos.<br><br>
+                    <div style="text-align: center;">
+                        <img src="capacidad.png" alt="capacidad" style="width: 300px; height: auto;">
+                    </div><br><br>
+                La Gestión de la Disponibilidad se encarga de garantizar que los servicios TI operen de forma continua y confiable, cumpliendo con los SLAs establecidos y manteniendo un costo equilibrado. <br><br>
+                    <div style="text-align: center;">
+                        <img src="disponibilidad.png" alt="disponibilidad" style="width: 300px; height: auto;">
+                    </div><br><br>
+                La Gestión de la Continuidad del Servicio se enfoca en evitar que interrupciones graves en los servicios TI, causadas por desastres naturales u otros eventos mayores, generen un impacto catastrófico en el negocio.<br><br>
+                    <div style="text-align: center;">
+                        <img src="continuidad.jpg" alt="continuidad" style="width: 300px; height: auto;">
+                    </div></p>
+        </section>
+
+        <section id="conclusiones">
+            <h2>Conclusiones</h2>
+            <p>La gestión de servicios TI, fundamentada en ITIL V4, es clave para garantizar servicios eficientes, continuos y de calidad en las organizaciones. 
+                Desde el Service Desk hasta la gestión de capacidad y continuidad, estas prácticas buscan optimizar procesos, satisfacer a los usuarios y cumplir objetivos estratégicos.<br><br>
+
+                ITIL permite resolver incidentes y problemas de forma ágil, minimizando interrupciones y mejorando la productividad. 
+                Además, su enfoque en la gestión de cambios y recursos asegura que las organizaciones puedan adaptarse sin perder calidad en sus servicios.<br><br>
+                
+                En conclusión, aplicar estas prácticas fortalece la eficiencia operativa y la resiliencia ante imprevistos, convirtiéndose en una herramienta esencial para la sostenibilidad y el éxito en el entorno actual.</p>
+        </section>
+
+        <section id="bibliografia">
+            <h2>Bibliografía</h2>
+            <ul>
+                <li>Buenas prácticas ITIL aplicadas al Service Desk | Click-IT | Servicios tecnológicos y de consultoría. Click-IT | Servicios tecnológicos y de consultoría | [en línea]. [sin fecha] [consultado el 2 de diciembre de 2024]. Disponible en: https://click-it.es/buenas-practicas-itil-aplicadas-al-service-desk/</li>
+                <li>¿Por qué deberías externalizar tu Service Desk? | Click-IT | Servicios tecnológicos y de consultoría. Click-IT | Servicios tecnológicos y de consultoría | [en línea]. [sin fecha] [consultado el 2 de diciembre de 2024]. Disponible en: https://click-it.es/por-que-deberias-externalizar-tu-service-desk/</li>
+                <li>Gestión de la Disponibilidad – CertCampus. CertCampus – Escuela de Tecnología y Negocios [en línea]. [sin fecha] [consultado el 2 de diciembre de 2024]. Disponible en: https://campus.certcampus.com/itil/gestion-de-la-disponibilidad/</li>
+                <li>Gestión de la Continuidad – CertCampus. CertCampus – Escuela de Tecnología y Negocios [en línea]. [sin fecha] [consultado el 2 de diciembre de 2024]. Disponible en: https://campus.certcampus.com/itil/gestion-de-la-continuidad/#:~:text=La%20Gestión%20de%20la%20Continuidad,consecuencias%20catastróficas%20para%20el%20negocio.</li>
+                <li>¿Qué es la gestión de cambios? 6 pasos hacia el éxito [2024] • Asana. Asana [en línea]. [sin fecha] [consultado el 2 de diciembre de 2024]. Disponible en: https://asana.com/es/resources/change-management-process</li>
+                <li>Gestión de problemas: 8 pasos para acelerar la resolución de incidentes [2024] • Asana. Asana [en línea]. [sin fecha] [consultado el 2 de diciembre de 2024]. Disponible en: https://asana.com/es/resources/problem-management-basics</li>
+                <li>Gestión de incidentes: cómo crear un plan (incluye siete mejores prácticas) [2024] • Asana. Asana [en línea]. [sin fecha] [consultado el 2 de diciembre de 2024]. Disponible en: https://asana.com/es/resources/incident-management</li>
+                <li>NAVARRO, Adolfo. Gestión de la Continuidad del Servicio de TI (ITSCM) Etapas y Claves. Blog de Innevo [en línea]. 17 de mayo de 2024 [consultado el 2 de diciembre de 2024]. Disponible en: https://blog.innevo.com/gestion-de-la-continuidad-del-servicio-de-ti</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p><b>© 2024 Universidad Continental. Todos los derechos reservados.</b></p>
+    </footer>
+
+    <script>
+        // Función para mostrar la sección seleccionada
+        function showSection(sectionId) {
+            // Oculta todas las secciones
+            const sections = document.querySelectorAll('main section');
+            sections.forEach(section => section.classList.remove('active'));
+    
+            // Muestra la sección seleccionada
+            const targetSection = document.getElementById(sectionId);
+            targetSection.classList.add('active');
+    
+            // Guarda la sección activa en localStorage
+            localStorage.setItem('activeSection', sectionId);
+        }
+    
+        // Función para cargar la sección activa desde localStorage
+        window.onload = function () {
+            const savedSection = localStorage.getItem('activeSection');
+            if (savedSection) {
+                showSection(savedSection);
+            } else {
+                // Si no hay una sección guardada, muestra la sección predeterminada
+                showSection('presentacion');
+            }
+        };
+    </script>
+    
+</body>
+</html>
+
